@@ -1,0 +1,22 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+@media (max-width: 300px) {
+  html,
+  body {
+    overflow: scroll;
+  }
+}
+
+input[type='time']::-webkit-calendar-picker-indicator,
+input[type='time']::-webkit-datetime-edit-ampm-field {
+  display: none;
+}

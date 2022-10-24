@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/api/*": ["api/*"],
+      "@/api": ["api/index.ts"],
+
+      "@/pages/*": ["pages/*"],
+      "@/pages": ["pages/index.ts"],
+
+      "@/components/*": ["components/*"],
+      "@/components": ["components/index.ts"],
+
+      "@/constants/*": ["constants/*"],
+      "@/constants": ["constants/index.ts"],
+
+      "@/hooks/*": ["hooks/*"],
+      "@/hooks": ["hooks/index.ts"],
+
+      "@/store/*": ["store/*"],
+      "@/store": ["store/index.ts"],
+
+      "@/styles/*": ["styles/*"],
+      "@/styles": ["styles/index.ts"],
+
+      "@/utils/*": ["utils/*"],
+      "@/utils": ["utils/index.ts"],
+
+      "@/types/*": ["types/*"],
+      "@/types": ["types/index.ts"],
+
+      "@/validation/*": ["validation/*"],
+      "@/validation": ["validation/index.ts"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
