@@ -1,7 +1,6 @@
 import { extendTheme } from '@chakra-ui/react';
 import { createBreakpoints, BaseBreakpointConfig } from '@chakra-ui/theme-tools';
 
-import Button from './button';
 import { INITIAL_COLOR_MODE } from '@/constants';
 
 type ColorsConfig = Record<string, [string, string] | [string]>;
@@ -60,10 +59,6 @@ const theme = extendTheme({
 			}
 		}
 	},
-	components: {
-		Button,
-		IconButton: Button,
-	}
 });
 
 export default theme;
